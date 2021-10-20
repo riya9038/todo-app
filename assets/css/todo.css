@@ -1,0 +1,238 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+
+#container{
+	width: 50%;
+	height: 90vh;
+	background-color: rgb(141, 121, 10);;
+	margin: 10%;
+    
+}
+form{
+    width:100%;
+    height:100%;
+}
+label{
+    margin:0px;
+    font-family: monospace;
+}
+#heading{
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	color: white;
+	background-color: rgb(68, 59, 43);
+	border-bottom: 1px solid grey;
+}
+#heading span{
+	margin: 5px;
+	font-family: cursive;
+	font-size: 2rem;
+}
+#description{
+	width: 100%;
+	height: 10%;
+	color: white;
+	background-color: rgb(68, 59, 43);
+	border-bottom: 1px solid grey;
+	display: flex;
+	flex-direction: column;
+    box-shadow: 2px 2px 5px black inset;
+}
+#description span{
+	margin-left: 5px;
+	font-family: monospace;
+	/*font-size: 1rem;*/
+}
+#desc{
+	border: none;
+	background-color: rgb(68, 59, 43);
+	margin-left: 5px;
+	outline: none;
+	font-family: monospace;
+    color:rgb(218, 216, 204);
+    
+}
+::placeholder {
+	background-color: none;
+	color: rgb(218, 216, 204);
+	opacity: 0.7;
+}
+#category-date{
+	width: 100%;
+	height: 10%;
+	color: rgb(255, 255, 255);
+	background-color: rgb(68, 59, 43);
+	border-bottom: 1px solid grey;
+	display: flex;
+	justify-content: space-between;
+}
+#category{
+	width: 80%;
+	background-color: rgb(68, 59, 43);
+	color: rgb(218, 216, 204);
+	opacity: 0.8;
+	border: none;
+	outline: none;
+    margin-left: 5px;
+}
+#category option{
+    background-color: rgb(218, 216, 204);
+    border: 1px solid black;
+    color:black;
+}
+.category{
+	border-right: 1px solid grey; ;
+}
+#date{
+	border: none;
+	background-color: rgb(68, 59, 43);
+	margin-left: 5px;
+	outline: none;
+	width: 80%;
+	color: rgb(218, 216, 204);
+}
+.details{
+	width: 50%;
+	height: 100%;
+	color: white;
+	background-color: rgb(68, 59, 43);
+	/*border-bottom: 1px solid grey;*/
+	display: flex;
+	flex-direction: column;
+	margin-left: 5px;
+	font-family: monospace;
+    box-shadow: 2px 2px 5px black inset;
+}
+#add-delete{
+	width: 100%;
+	height: 20%;
+	color: black;
+	background-color: rgb(68, 59, 43);
+	border-bottom: 1px solid grey;
+	display: flex;
+	justify-content: center;
+    box-shadow: 0px -2px 5px black inset;
+}
+.task{
+	width: 28%;
+	height: 40%;
+	color: white;
+	font-family: monospace;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.task button{
+    width:100%;
+    height: 100%;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px;
+    border-radius: 8px;
+    /* border:1px solid rgb(34, 33, 33);
+    outline: none; */
+}
+.task button span{
+    width:70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.task i{
+	width: 30%;
+	height: 100%;
+	background-color: white;
+	padding-top: 8%;
+    color: black;
+    border-radius: 8px;
+}
+#list{
+	width: 100%;
+	height: 49%;
+	color: black;
+	background-color: rgb(141, 121, 10);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+    overflow: scroll;    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#pending-list{
+    width: 100%;
+	height: 95%;
+    padding: 0px;
+}
+#todo-list{
+	width: 98%;
+	height: 25%;
+	/* background-color: rgb(184, 224, 125); */
+    border-radius: 4px;
+    margin: 5px;
+	border-bottom: 1px solid rgb(61, 60, 60);
+	font-family: monospace;
+	display: flex;
+	align-items: center;
+    padding-left: 5px;
+    opacity:0.8;
+    border-left: 4px solid black;
+    
+}
+/* #todo-list:nth-child(even) 
+{
+    border-left: 4px solid green;
+} */
+/* #todo-list:nth-child(3) 
+{
+    border-left: 4px solid black;
+} */
+#todo-list:nth-child(even) .category-list{
+    background-color: rgb(9, 87, 2);
+}
+#todo-list:nth-child(odd) .category-list{
+    background-color: rgb(235, 118, 22);
+}
+#todo-list li{
+    width: 95%;
+	height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:5px;
+    /* background-color: blue; */
+}
+.todo-list{
+    width:70%;
+    height:100%;
+    /* background-color: aquamarine; */
+}
+
+label{
+	margin-left: 5px;
+	font-size: 1.2rem;
+}
+.category-list{
+    width: 20%;
+    height: 45%;
+    background-color: rgb(9, 87, 2);
+    color:white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
