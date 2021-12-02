@@ -63,7 +63,7 @@
             <% for (let i of list) { %> 
               <div id="todo-list"> 
                 <li>
-                  <div class="todo-list" ><p class="item1"><input class="check" type="checkbox" value="<%=i._id%>" style= "margin-right:20px;"><%= i.desc %> <br>
+                  <div class="todo-list<%=i._id%>" ><p class="item1"><input class="check" type="checkbox" value="<%=i._id%>" style= "margin-right:20px;"><%= i.desc %> <br>
                   <span id="item3"><i class="far fa-calendar-alt" style= "margin-left:30px;height:20px; width:20px;color:black;font-size:15px"></i>
                   <%= i.date %></span></p> </div>
 
